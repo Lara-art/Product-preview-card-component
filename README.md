@@ -9,15 +9,15 @@ This is my solution to the <a href="https://www.frontendmentor.io/learning-paths
 
 <table>
   <tr>
-    <td style="width: 75%;"><img src="https://github.com/Lara-art/Recipe-page/blob/main/screenshots/Desktop.PNG" alt="Vista de Escritorio" style="width: 100%;"/></td>
-    <td style="width: 25%;"><img src="https://github.com/Lara-art/Recipe-page/blob/main/screenshots/mobile.PNG"  alt="Vista Móvil" style="width: 100%;"/></td>
+    <td style="width: 75%;"><img src="https://github.com/Lara-art/Product-preview-card-component/blob/main/screenshot/Desktop.PNG" alt="Vista de Escritorio" style="width: 100%;"/></td>
+    <td style="width: 25%;"><img src="https://github.com/Lara-art/Product-preview-card-component/blob/main/screenshot/Mobile.PNG"  alt="Vista Móvil" style="width: 100%;"/></td>
   </tr>
 </table>
 
 ### 🔗 Links
 
 - Solution URL: [Github](https://github.com/Lara-art/Product-preview-card-component)
-- Live Site URL: [Deployed](https://lara-art.github.io/Recipe-page/)
+- Live Site URL: [Deployed](https://lara-art.github.io/Product-preview-card-component/)
 
 ## My process
 
@@ -29,41 +29,34 @@ This is my solution to the <a href="https://www.frontendmentor.io/learning-paths
 - Base typography settings
 - Image styling
 - Use of Flexbox
+- - Use of Grid
 - Mobile-first design
 
 
 ### 📚 What I learned
 
-With this exercise, I learned something I had never done before: changing the color of the list item markers.
+With this exercise, I learned how to resize the grid in media.
 
 
 ```css
-li {
-        list-style-type: inherit var(--color-Dark-Raspberry);
+ .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30vh 50vh; 
+        max-height: 800px;
     }
-
-    & ::marker {
-        color: var(--color-Dark-Raspberry);
-    }
-}
 
 
 ```
-I also had to set the image to position: absolute in media, so that it wouldn't be affected by the div it was placed in.
+Where I had the most trouble was with resizing the image in the @media query because I couldn't get it to be the size I wanted in the grid.
 
 ```css
-@media screen and (min-device-width: 325px) and (max-device-width: 600px) {
+img {
+    border-radius: var(--radius-grid) var(--radius-grid) 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .card {
-        border-radius: 0px;
-        margin: 150px auto 0px auto;
-
-        & img {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
 ```
 
 
