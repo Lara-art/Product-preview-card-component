@@ -29,7 +29,7 @@ This is my solution to the <a href="https://www.frontendmentor.io/learning-paths
 - Base typography settings
 - Image styling
 - Use of Flexbox
-- - Use of Grid
+- Use of Grid
 - Mobile-first design
 
 
