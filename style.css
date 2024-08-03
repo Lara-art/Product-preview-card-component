@@ -48,7 +48,8 @@ a {
     font-size: 11px;
 }
 
-span, p{
+span,
+p {
     color: var(--color-Dark-grayish-blue);
 }
 
@@ -66,9 +67,11 @@ button {
     border-radius: var(--radius);
     padding: 1rem;
     border: 0px solid;
-    font-size: clamp(0.75rem, 0.571rem + 0.476vw, 1rem);    font-weight: 700;
+    font-size: clamp(0.75rem, 0.571rem + 0.476vw, 1rem);
+    font-weight: 700;
     gap: 0.5rem;
-    & .material-symbols-outlined{
+
+    & .material-symbols-outlined {
         font-size: clamp(1rem, 0.732rem + 0.714vw, 1.375rem);
     }
 }
@@ -126,18 +129,19 @@ button {
 
     .grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 30vh 50vh; 
+        grid-template-rows: 30vh 50vh;
         max-height: 800px;
     }
 
     img {
         border-radius: var(--radius-grid) var(--radius-grid) 0 0;
-        width: 100%;         
-        height: 100%; 
-        object-fit: cover; 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
+
     button {
         padding: 0.8rem;
     }
-    
+
 }
